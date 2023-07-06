@@ -1,0 +1,151 @@
+#work {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding:0 2rem 2rem 4rem;   
+}
+
+.workDesign {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.workTypo {
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 3.1rem;
+    text-transform: uppercase;
+    opacity: 25%;
+}
+
+.workContainerMain {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    transform: translateY(-3.5rem);
+    -webkit-transform: translateY(-3.5rem);
+    -moz-transform: translateY(-3.5rem);
+    -ms-transform: translateY(-3.5rem);
+    -o-transform: translateY(-3.5rem);
+}
+
+.workMain {
+    display: flex;
+    flex-direction: column;
+}
+
+.workText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    padding-left: 3rem;
+}
+
+.workTitle {
+    display: flex;
+    flex-direction: column;
+    line-height: .9rem;
+}
+
+.workNumber {
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.workTitle span:nth-child(1) {
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.workTitle span:nth-child(2) {
+    font-size: .8rem;
+}
+
+.workImage {
+    width: 300px;
+    height: 300px;
+}
+
+.workLink {
+    height: 65vh;
+    display: flex;
+    align-items: end;
+    font-size: .8rem;
+    width: 50%;
+    justify-content: center;
+}
+
+.workLinked {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    transition: all 0.3s;
+    padding: 0 .3rem;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.workLinked:hover {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+}
+
+/* breakpoints */
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 576px) {
+    #work {
+        width: 100%;
+        background-color: var(--primary-color);
+        padding: 2rem 1rem;
+    }
+    .workContainerMain {
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .workDesign {
+        position: absolute;
+        padding-top: 5.5rem;
+        gap: 1rem;
+    }
+    .workOpening {
+        position: absolute;
+        font-size: 1.8rem;
+        width: 50%;
+        left: 2rem;
+        line-height: 1.4rem;
+    }
+    .workMain {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem; 
+    }
+    .workLink { 
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: end;
+        padding: 0 5.3rem 0 0;
+        height: 32vh;
+    }
+    .workLinked {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 350px) {
+}
